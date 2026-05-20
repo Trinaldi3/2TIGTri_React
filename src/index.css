@@ -1,0 +1,47 @@
+/* Font Definitions */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+:root {
+  --color-primary: #00a3ff;
+  --background-color-2: #13131d;
+  --background-color-4: #242435;
+  --color-body: #acacac;
+  --color-white: #ffffff;
+  --font-primary: 'Poppins', sans-serif; /* Menggunakan Poppins sebagai default */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--background-color-2);
+  color: var(--color-white);
+  min-height: 100vh;
+  /* Hapus display: flex; place-items: center agar layout tidak terpusat di tengah layar */
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

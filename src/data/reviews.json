@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Budi Santoso",
+    "review": "Makanannya enak banget, bumbunya meresap sampai ke dalam!",
+    "avatar": "https://avatar-placeholder.iran.liara.run/public/1"
+  },
+  {
+    "id": 2,
+    "name": "Siti Aminah",
+    "review": "Pelayanan cepat dan ramah. Nasi gorengnya juara!",
+    "avatar": "https://avatar-placeholder.iran.liara.run/public/55"
+  },
+  {
+    "id": 3,
+    "name": "Andi Wijaya",
+    "review": "Harganya terjangkau tapi rasa bintang lima. Mantap!",
+    "avatar": "https://avatar-placeholder.iran.liara.run/public/12"
+  },
+  {
+    "id": 4,
+    "name": "Dewi Lestari",
+    "review": "Rendangnya empuk sekali, persis masakan nenek saya.",
+    "avatar": "https://avatar-placeholder.iran.liara.run/public/60"
+  },
+  {
+    "id": 5,
+    "name": "Rizky Fauzi",
+    "review": "Sate ayamnya besar-besar dan bumbu kacangnya gurih.",
+    "avatar": "https://avatar-placeholder.iran.liara.run/public/25"
+  }
+]

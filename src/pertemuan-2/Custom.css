@@ -1,0 +1,118 @@
+/* --- Variabel Warna & Font Cyberpunk --- */
+:root {
+  --bg-color: #0d0208; /* Hitam sangat gelap */
+  --card-bg: #1a1a1d;  /* Abu-abu gelap netral */
+  
+  /* Palet Neon */
+  --neon-cyan: #00f3ff;
+  --neon-magenta: #ff0055;
+  --matrix-green: #00ff41;
+  --deep-shadow: rgba(0, 0, 0, 0.8);
+  
+  /* Font */
+  --font-cyber: 'Courier New', Courier, monospace;
+}
+
+/* --- Styling Global (Body) --- */
+body {
+    font-family: var(--font-cyber);
+    background-color: var(--bg-color);
+    color: var(--matrix-green); /* Teks terminal hijau default */
+    margin: 0;
+    padding: 20px;
+    
+    /* Efek visual: Pola Grid dan Scanlines halus */
+    background-image: 
+        linear-gradient(rgba(0, 255, 65, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 65, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* --- Penyesuaian Gambar (Cyber Logo) --- */
+img {
+    max-width: 100%; /* Memastikan gambar tidak meluap dari wadahnya */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Tengahkan gambar dan beri margin bawah */
+    border: 2px solid var(--neon-magenta); /* Tambahkan border neon */
+    box-shadow: 0 0 10px var(--neon-magenta); /* Beri efek cahaya */
+}
+
+/* --- Header Utama (h1) --- */
+h1 {
+    color: var(--neon-cyan);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Spasi teknis */
+    font-weight: bold;
+    font-size: 2.5em; /* Sesuaikan ukuran font */
+    
+    /* Efek Cahaya Teks Neon Magenta */
+    text-shadow: 
+        0 0 5px var(--neon-magenta),
+        0 0 10px var(--neon-magenta),
+        0 0 20px var(--neon-magenta);
+    
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* --- Paragraf (p) --- */
+p {
+    font-size: 16px;
+    line-height: 1.6; /* Sesuaikan ketinggian baris */
+    color: var(--neon-cyan); /* Teks utama berwarna Cyan */
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* --- Garis Pemisah (hr) --- */
+hr {
+    border: none;
+    height: 1px; /* Garis tipis */
+    
+    /* Efek Laser Gradient (Lenyap di ujung) */
+    background: linear-gradient(90deg, transparent, var(--matrix-green), transparent);
+    
+    /* Cahaya laser hijau */
+    box-shadow: 0 0 8px var(--matrix-green);
+    
+    margin: 25px 0; /* Sesuaikan margin */
+}
+
+/* --- Greeting (small) --- */
+small {
+    display: block;
+    font-style: normal; /* Menghapus miring */
+    text-align: center; /* Tengahkan teks */
+    color: var(--matrix-green); /* Kembali ke warna matriks */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* --- Styling Khusus untuk UserCard --- */
+.user-card {
+    background-color: #222; /* Latar belakang sedikit berbeda untuk kartu */
+    border: 1px solid var(--matrix-green); /* Border hijau matriks */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.2); /* Efek cahaya dalam */
+}
+
+/* --- Header di dalam UserCard (h3) --- */
+.user-card h3 {
+    color: var(--neon-magenta); /* Warna magenta untuk nama */
+    margin-top: 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+/* --- Paragraf di dalam UserCard (p) --- */
+.user-card p {
+    color: #ccc; /* Warna teks yang lebih netral untuk NIM dan Tanggal */
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
